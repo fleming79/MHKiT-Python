@@ -1,7 +1,4 @@
-from pecos.utils import index_to_datetime
-import matplotlib.pyplot as plt 
 import datetime as dt
-from mhkit import qc
 import pandas as pd 
 import numpy as np 
 
@@ -31,6 +28,7 @@ def get_statistics(data,freq,period=600,vector_channels=[]):
     means,maxs,mins,stdevs : pandas DataFrame
         Calculated statistical values from the data, indexed by the first timestamp
     """
+    from mhkit import qc
     # Check data type
     assert isinstance(data, pd.DataFrame), 'data must be of type pd.DataFrame'
     assert isinstance(freq, (float,int)), 'freq must be of type int or float'
