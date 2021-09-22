@@ -22,13 +22,9 @@ DEPENDENCIES = ['pandas>=1.0.0',
                 'scipy',
                 'matplotlib', 
                 'requests', 
-  #              'pecos>=0.1.9',
                 'fatpack',
                 'lxml',
- #               'scikit-learn',
-#		        'NREL-rex>=0.2.63',
-
-  #              'netCDF4', 
+                'scikit-learn',
                 'xarray']
 
 # use README file as the long description
